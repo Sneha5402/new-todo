@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--  Title for the task -->
+    <title>To-Do List</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header><b>To-Do List</b></header>
+        <div class="text">
+            <input id="txt" type="text" placeholder="Enter your task" autocomplete="off">
+            <button class="text-btn"> Add</button>
+        </div>
+        <p class="error" ></p>
+
+        <div class="tabs">
+            <div class="filters">
+                <span id="all"><b>All</b>(<span id="allCount">0</span>)</span>
+                <span id="assigned"><b>Assigned</b>(<span id="assignedCount">0</span>)</span>
+                <span id="completed"><b>Completed </b>(<span id="completedCount">0</span>)</span>
+            </div>
+            <button class="clear-btn" type="button2">Clear All</button>
+        </div>
+
+        <div class="todo-item">
+            <ul>
+                <!-- Creating todo item field to store the tasks in the lists -->
+            </ul>
+        </div>
+
+        <div class="no-tasks" style="display: none;">No tasks found</div>
+    </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
